@@ -1,4 +1,3 @@
 ## Assignments
 
-***Structure***
-Each week's C course assignments will be uploaded to their corresponding folder.
+All C course assignments and materials will be uploaded to their corresponding folder on a weekly basis.
