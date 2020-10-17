@@ -44,7 +44,7 @@ int solveMaze(char **maze, const int HT, const int WD, int y, int x){
     if(*(*(maze + x) + y) == *block)            //blocked point
         return 0;
 
-    *(*(maze + x) + y) = *path;
+    maze[x][y] = *path;
 
     if(solveMaze(maze, HT, WD, y, x - 1) ==1)       //up
         return 1;
@@ -55,7 +55,7 @@ int solveMaze(char **maze, const int HT, const int WD, int y, int x){
     if(solveMaze(maze, HT, WD, y - 1, x) ==1)       //left
         return 1;
 
-    *(*(maze + x) + y) = *wpth;
+    maze[x][y] = *wpth;
 
     return 0;
 }
