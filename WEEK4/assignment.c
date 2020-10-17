@@ -30,10 +30,10 @@ int main(){
 
 int solveMaze(char **maze, const int HT, const int WD, int y, int x){ 
     
-    const char *path = ".";     //marks the path
-    const char *endp = "*";     //marks the end point
-    const char *block = "#";    //marks the blocked
-    const char *wpth = "X";     //marks the wrong path
+    const char *path = ".";     //path
+    const char *endp = "*";     //end point
+    const char *block = "#";    //blocked
+    const char *wpth = "X";     //wrong path
 
     if(y < 0 || y >= WD || x < 0 || x >= HT)    //checks the bounds of the arrays
         return 0;
@@ -68,3 +68,7 @@ void printMaze(char **maze, const int HT, const int WD){
     printf("%c\n",maze[i][WD - 1]);
     }   
 }
+
+
+
+
